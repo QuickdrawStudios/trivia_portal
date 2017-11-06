@@ -1,3 +1,12 @@
-<p>
-  demo works!
-</p>
+<app-subscribe *ngIf="showSubscribe"></app-subscribe>
+<button class="demo-button" *ngIf="showSubscribe" (click)="hideSubscribe()">Continue in Demo Mode</button>
+<div class="category-select-container" *ngIf="showCategorySelect">
+    <app-category-select [categories]="categories" (categorySelect)="selectCategory($event)"></app-category-select>
+    <button class="start-button" *ngIf="showCategorySelect" (click)="startGame()">start game</button>
+</div>
+<div class="round-tab-container">
+    <app-round-tabs *ngIf="rounds.length > 0" [rounds]="rounds" (roundSelect)="selectRound($event)"></app-round-tabs>
+</div>
+<div class="round-panel-container">
+    <app-round-panel *ngIf="rounds.length > 0" [round]="rounds[selectedRound]"></app-round-panel>
+</div>

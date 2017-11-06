@@ -1,0 +1,8 @@
+<div class="question-container">
+  <button class="question-button" (click)="showQuestion()">Q{{questionNumber}}</button>
+  <div class="question" *ngIf="questionShow">{{question.question}}</div>
+</div>
+<div class="answer-container">
+    <button class="answer-button" *ngIf="questionShow" (click)="showAnswer()">A{{questionNumber}}</button>
+    <div class="answer" *ngIf="answerShow" (click)="showAnswer()">{{question.answer}}</div>
+</div>

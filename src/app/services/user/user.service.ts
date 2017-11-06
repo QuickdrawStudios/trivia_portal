@@ -36,7 +36,8 @@ export class UserService {
     headers.append('Content-Type', 'application/json');
     headers.append('Authorization', localStorage.getItem("token"));
     let options = new RequestOptions({ headers: headers });
-    return this._http.get('http://localhost:8080/user' , options)
+    return this._http
+      .get('http://localhost:8080/user', options)
       .map(response => response.json())
       .catch(error => Observable.throw (JSON.parse(error._body).response)
       );

@@ -1,0 +1,47 @@
+.question-container {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.answer-container {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.question-button {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 100px;
+}
+
+.answer-button {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 100px;
+}
+
+.question {
+    background-color: #d5d5d5;
+    padding: 10px;
+    height: 80%;
+    transition: all 0.2s ease;
+}
+
+.question:hover {
+    background-color: #c5c5c5;
+}
+
+.answer {
+    background-color: #d5d5d5;
+    padding: 10px;
+    height: 80%;
+    transition: all 0.2s ease;
+}
+
+.answer:hover {
+    background-color: #c5c5c5;
+}

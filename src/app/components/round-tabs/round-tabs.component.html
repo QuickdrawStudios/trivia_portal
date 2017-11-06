@@ -1,0 +1,3 @@
+<div *ngIf="rounds" class="round-tabs-container">
+  <button *ngFor="let round of rounds; let i = index" class="round-tab" (click)="selectRound(i)">{{round.category}}</button>
+</div>

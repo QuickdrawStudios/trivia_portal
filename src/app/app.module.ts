@@ -10,6 +10,11 @@ import { RegisterComponent } from './components/register/register.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { DemoComponent } from './components/demo/demo.component';
+import { SubscribeComponent } from './components/subscribe/subscribe.component';
+import { RoundPanelComponent } from './components/round-panel/round-panel.component';
+import { RoundTabsComponent } from './components/round-tabs/round-tabs.component';
+import { QuestionComponent } from './components/question/question.component';
+import { CategorySelectComponent } from './components/category-select/category-select.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +22,12 @@ import { DemoComponent } from './components/demo/demo.component';
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    DemoComponent
+    DemoComponent,
+    SubscribeComponent,
+    RoundPanelComponent,
+    RoundTabsComponent,
+    QuestionComponent,
+    CategorySelectComponent
   ],
   imports: [
     BrowserModule,

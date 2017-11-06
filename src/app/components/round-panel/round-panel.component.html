@@ -1,0 +1,5 @@
+<div class="round-panel-container">
+  <div *ngFor="let question of round.questions; let i = index" class="question-container">
+    <app-question [question]="question" [questionNumber]="i + 1"></app-question>
+  </div>
+</div>
